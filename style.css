@@ -1,0 +1,13 @@
+:root{
+    --white: #fffbeb;
+    --orangeish: #fef3c7;
+    --bone: #fde68a;
+    --woodish: #b45309;
+}
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    font-family: 'Gentium Book Basic', serif;
+}
