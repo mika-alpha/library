@@ -66,8 +66,10 @@ body{
 .form-row input[type='text'],
 .form-row input[type='number'] {
     width: 15vw;
-    height: initial;
+    height: 25px;
+    font-size: 15px;
 }
+
 
 .form-row label {
     width: 120px;
@@ -100,23 +102,29 @@ body{
     justify-content: center;
 }
 
-.modal-content {
+.modal-content{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bone);
+    border: 5px solid var(--woodish);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.modal-content form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 20px;
-    background-color: var(--bone);
-    border: 5px solid var(--woodish);
-    width: 30vw;
-    padding: 20px;
 }
 
 .modal-header{
     display: flex;
     justify-content: space-between;
-    width: 90%
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .modal-header h2{
