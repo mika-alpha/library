@@ -1,8 +1,9 @@
 :root{
-    --white: #fffbeb;
-    --orangeish: #fef3c7;
-    --bone: #fde68a;
-    --woodish: #b45309;
+    --white: #f8fafc;
+    --orangeish: #f1f5f9;
+    --bone: #fee2e2;
+    --woodish: #fca5a5; 
+    --clicked: #ef4444;
 }
 
 *{
@@ -35,9 +36,11 @@ body{
 
 .main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 50px;
+    justify-content: center;
     background-color: var(--orangeish);
+    padding: 50px;
 }
 
 .new-book{
@@ -48,10 +51,11 @@ body{
     color:var(--white);
     border: none;
     border-radius: 20px;
+    font-weight: 900;
 }
 
 .new-book:active{
-    background-color: #78350f;
+    background-color: var(--clicked)
 }
 
 
@@ -69,7 +73,6 @@ body{
     height: 25px;
     font-size: 15px;
 }
-
 
 .form-row label {
     width: 120px;
@@ -92,18 +95,18 @@ body{
 }
 
 .modal {
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .modal-content{
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     background-color: var(--bone);
@@ -148,3 +151,46 @@ body{
 .modal .new-book{
     width: 15vw;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 300px;
+    background-color: var(--bone);
+    font-size: 25px;
+    padding: 30px;
+    border: 5px solid var(--woodish);
+    border-radius: 20px;
+}
+
+.info-row,
+.read-switch{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.read-switch input[type="checkbox"]{
+    width: 50px;
+    height: 15px;
+}
+
+.delete{
+    background-color: var(--woodish);
+    color: var(--white);
+    font-weight: 900;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 18px;
+    align-self: center;
+}
+
+.delete:active{
+    background-color: var(--clicked);
+}
+
+
+
+  
