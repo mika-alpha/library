@@ -55,7 +55,7 @@ function addCard(index, book){
     card.appendChild(pagesRow);
 
     //checkbox
-    let checkbox = createCheckbox(book.isRead);
+    let checkbox = createCheckbox(book.isRead, index);
     card.appendChild(checkbox);
 
     //delete button
@@ -64,11 +64,11 @@ function addCard(index, book){
     deleteButton.setAttribute('type', 'button');
     deleteButton.textContent = "Delete";
     card.appendChild(deleteButton);
-
+    //add the card to the grid
     mainGrid.appendChild(card);
 }
 
-function createCheckbox(isChecked){
+function createCheckbox(isChecked, index){
     let checkboxDiv = document.createElement('div');
     checkboxDiv.classList.add('read-switch');
     let header = createRowElement('h4', 'Read:');
@@ -78,9 +78,13 @@ function createCheckbox(isChecked){
     if (isChecked){
         checkbox.checked = true;
     }
+    checkbox.addEventListener('change', () =>{
+        library[index].isRead = checkbox.checked;
+    })
     checkboxDiv.appendChild(checkbox);
     return checkboxDiv;
 }
+
 
 function newRow(header, headerContent, element, elementContent){
     let row = createCardRow();
