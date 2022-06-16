@@ -3,6 +3,7 @@ let closeButton = document.querySelector('.close');
 let addButton = document.querySelector('.new-book');
 let form = document.forms.bookForm;
 let addBookButton = document.getElementById('add');
+let validateForm = document.querySelector('.validate');
 
 let library = [];
 
@@ -20,6 +21,10 @@ function openModal(){
 }
 
 function addBookToLibrary(){
+    if (!form.checkValidity()){
+        validateForm.click();
+        return;
+    }
     let formData = new FormData(form);
     library.push(new Book(formData.get('title'), formData.get('author'), 
     Number(formData.get('pages')), Boolean(Number(formData.get('read')))));

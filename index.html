@@ -57,11 +57,11 @@
                 </div>
                 <div class="form-row">
                     <label for="title">Title: </label>
-                    <input type="text" name="title" id="title">
+                    <input type="text" name="title" id="title" required>
                 </div>
                 <div class="form-row">
                     <label for="pages">Pages: </label>
-                    <input type="number" name="pages" id="pages" min="1">
+                    <input type="number" name="pages" id="pages" min="1" required>
                 </div>
                 <fieldset class="legacy-form-row">
                     <legend>Did you read it yet?</legend>
@@ -70,9 +70,9 @@
                     <input type="radio" id="no" name="read" value="0">
                     <label for="no" class="radio-label">No </label>
                 </fieldset>
+                <button type="submit" class="validate"></button>
                 <button type="button" class="new-book" id="add">ADD</button>
             </form>
-
         </div>
 
     </div>
