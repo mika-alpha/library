@@ -16,7 +16,11 @@
 body{
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main{
+    min-height: 100%;
 }
 
 .header,
@@ -27,10 +31,12 @@ body{
 
 }
 .header{
+    height: 100px;
     justify-content: space-around;
 }
 
 .footer{
+    height: 50px;
     justify-content: center;
 }
 
