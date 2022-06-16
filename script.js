@@ -63,6 +63,9 @@ function addCard(index, book){
     deleteButton.classList.add('delete');
     deleteButton.setAttribute('type', 'button');
     deleteButton.textContent = "Delete";
+    deleteButton.addEventListener('click', () =>{
+        mainGrid.removeChild(card);
+    });
     card.appendChild(deleteButton);
     //add the card to the grid
     mainGrid.appendChild(card);

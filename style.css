@@ -106,7 +106,7 @@ body{
 }
 
 .modal-content{
-    width: 35vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     background-color: var(--light-pink);
