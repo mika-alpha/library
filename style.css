@@ -1,8 +1,8 @@
 :root{
     --white: #f8fafc;
-    --orangeish: #f1f5f9;
-    --bone: #fee2e2;
-    --woodish: #fca5a5; 
+    --gray: #f1f5f9;
+    --light-pink: #fee2e2;
+    --pink: #fca5a5; 
     --clicked: #ef4444;
 }
 
@@ -23,7 +23,7 @@ body{
 .footer{
     display: flex;
     align-items: center;
-    background-color: var(--bone);
+    background-color: var(--light-pink);
 
 }
 .header{
@@ -39,7 +39,7 @@ body{
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 50px;
     justify-content: center;
-    background-color: var(--orangeish);
+    background-color: var(--gray);
     padding: 50px;
 }
 
@@ -47,7 +47,7 @@ body{
     width: 200px;
     height: 50px;
     font-size: 20px;
-    background-color: var(--woodish);
+    background-color: var(--pink);
     color:var(--white);
     border: none;
     border-radius: 20px;
@@ -109,8 +109,8 @@ body{
     width: 35vw;
     display: flex;
     flex-direction: column;
-    background-color: var(--bone);
-    border: 5px solid var(--woodish);
+    background-color: var(--light-pink);
+    border: 5px solid var(--pink);
     padding: 20px;
     font-size: 20px;
 }
@@ -136,7 +136,7 @@ body{
 
 .close {
     display: block;
-    color: var(--woodish);
+    color: var(--pink);
     font-size: 50px;
     font-weight: bold;
 }  
@@ -157,27 +157,27 @@ body{
     flex-direction: column;
     gap: 20px;
     height: 300px;
-    background-color: var(--bone);
+    background-color: var(--light-pink);
     font-size: 25px;
     padding: 30px;
-    border: 5px solid var(--woodish);
+    border: 5px solid var(--pink);
     border-radius: 20px;
 }
 
 .info-row,
 .read-switch{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
 .read-switch input[type="checkbox"]{
-    width: 50px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .delete{
-    background-color: var(--woodish);
+    background-color: var(--pink);
     color: var(--white);
     font-weight: 900;
     width: 100px;
