@@ -78,7 +78,7 @@ body{
 
 .form-row input[type='text'],
 .form-row input[type='number'] {
-    width: 15vw;
+    width: 200px;
     height: 25px;
     font-size: 15px;
 }
@@ -115,7 +115,7 @@ body{
 }
 
 .modal-content{
-    width: min(500px, 50vw);
+    width: 35vw;
     display: flex;
     flex-direction: column;
     background-color: var(--light-pink);
@@ -205,5 +205,6 @@ body{
     display: none;
 }
 
-
-  
+a{
+    text-decoration: none;
+}
