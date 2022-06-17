@@ -65,6 +65,7 @@ function addCard(index, book){
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener('click', () =>{
         mainGrid.removeChild(card);
+        library.splice(index, 1);
     });
     card.appendChild(deleteButton);
     //add the card to the grid
