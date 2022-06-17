@@ -13,16 +13,18 @@
     font-family: 'Gentium Book Basic', serif;
 }
 
+html,
 body{
-    min-height: 100vh;
-    max-width: 100vw;
+    height: 100%;
+    width: 100%;
+}
+
+body{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-.main{
-    min-height: 100%;
-}
+
 
 .header,
 .footer{
@@ -113,7 +115,7 @@ body{
 }
 
 .modal-content{
-    width: max(400px, 30vw);
+    width: min(500px, 50vw);
     display: flex;
     flex-direction: column;
     background-color: var(--light-pink);
