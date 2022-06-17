@@ -205,6 +205,7 @@ body{
     display: none;
 }
 
-a{
+a, a:visited{
     text-decoration: none;
+    color: var(--clicked);
 }
